@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksiro_yamaneko_github_io=self.webpackChunksiro_yamaneko_github_io||[]).push([["6130"],{1734:function(n,u,o){o.r(u),o.d(u,{default:function(){return i}});var t=o(5893),e=o(6550);function i(){return(0,t.jsx)(e.l_,{to:"/blog"})}}}]);

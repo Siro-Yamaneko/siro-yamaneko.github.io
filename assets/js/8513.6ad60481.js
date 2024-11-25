@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksiro_yamaneko_github_io=self.webpackChunksiro_yamaneko_github_io||[]).push([["8513"],{7936:function(){}}]);

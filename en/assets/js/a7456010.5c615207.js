@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksiro_yamaneko_github_io=self.webpackChunksiro_yamaneko_github_io||[]).push([["7365"],{2050:function(e){e.exports=JSON.parse('{"name":"docusaurus-plugin-content-pages","id":"default"}')}}]);
