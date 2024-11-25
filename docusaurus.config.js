@@ -1,42 +1,42 @@
 // @ts-check
-// `@type` JSDoc annotations allow editor autocompletion and type checking
-// (when paired with `@ts-check`).
-// There are various equivalent ways to declare your Docusaurus config.
-// See: https://docusaurus.io/docs/api/docusaurus-config
+// `@type` JSDocのアノテーションを使用すると、エディタ補完と型チェックが可能になります
+// （`@ts-check`と組み合わせて使用する場合）。
+// Docusaurus設定を宣言するさまざまな方法があります。
+// 詳細は: https://docusaurus.io/docs/api/docusaurus-config を参照してください
 
 import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Docusaurus MUI',
-  tagline: 'Templates Docusaurus with Material-UI',
+  title: 'ぼっちエンジニアの備忘録',
+  tagline: 'Hello ander world.',
   favicon: 'img/favicon.ico',
   staticDirectories: ['public', 'static'],
 
-  // Set the production url of your site here
-  url: 'https://docusaurus-material-ui-template.vercel.app/',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  // サイトを本番環境でホストするURLを指定します(GitHub PagesのURL)
+  url: 'https://siro-yamaneko.github.io',
+  // サイトが提供される/<baseUrl>/パス名を設定します
+  // GitHub Pagesを使用する場合、多くの場合 '/<projectName>/' になります
+  baseUrl: '/siro-yamaneko.github.io/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'namnguyenthanhwork', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-material-ui-template', // Usually your repo name.
+  // GitHub Pages用のデプロイ設定
+  // GitHub Pagesを使用しない場合、これらの設定は不要です
+  organizationName: 'Siro-Yamaneko', // GitHubのユーザー名
+  projectName: 'siro-yamaneko.github.io', // GitHubリポジトリ名
+  deploymentBranch: 'gh-pages', // デプロイ先ブランチ
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'throw', // 壊れたリンクが見つかった場合にエラーをスローします
+  onBrokenMarkdownLinks: 'warn', // 壊れたMarkdownリンクが見つかった場合に警告を表示します
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
+  // 国際化対応
+  // 国際化を使用しない場合でも、HTMLのlang属性などのメタデータを設定できます
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ja', // デフォルトの言語
+    locales: ['ja'], // サポートする言語のリスト
   },
 
   future: {
-    experimental_faster: true,
+    experimental_faster: true, // パフォーマンス向上の実験的な設定
   },
 
   presets: [
@@ -45,14 +45,16 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: './sidebars.js',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: 'https://github.com/namnguyenthanhwork/docusaurus-material-ui-template/tree/master',
+          sidebarPath: require.resolve('./sidebars.js'), // サイドバー構成ファイル
+          // 編集リンクを提供するGitHubリポジトリURL
+          editUrl: 'https://github.com/Siro-Yamaneko/siro-yamaneko.github.io/tree/main',
         },
-        blog: false,
+        blog: {
+          showReadingTime: true, // 記事の読了時間を表示
+          editUrl: 'https://github.com/Siro-Yamaneko/siro-yamaneko.github.io/tree/main', // 編集リンク
+        },
         theme: {
-          customCss: [require.resolve('./src/css/sources.scss')],
+          customCss: [require.resolve('./src/css/sources.scss')], // カスタムCSSファイル
         },
       }),
     ],
@@ -61,12 +63,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
+      // ソーシャルカード画像（シェア時に表示される画像）
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Docusaurus MUI',
         logo: {
-          alt: 'Docusaurus MUI Logo',
+          alt: 'Docusaurus MUI ロゴ',
           src: 'img/logo.svg',
         },
         items: [
@@ -74,14 +76,14 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'チュートリアル',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/blog', label: 'ブログ', position: 'left' },
           {
-            href: 'https://github.com/namnguyenthanhwork/docusaurus-material-ui-template',
+            href: 'https://github.com/Siro-Yamaneko/siro-yamaneko.github.io',
             position: 'right',
             className: 'header-github-link',
-            'aria-label': 'GitHub repository',
+            'aria-label': 'GitHubリポジトリ',
           },
         ],
       },
@@ -89,16 +91,16 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'ドキュメント',
             items: [
               {
-                label: 'Tutorial',
+                label: 'チュートリアル',
                 to: '/docs/intro',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'コミュニティ',
             items: [
               {
                 label: 'Stack Overflow',
@@ -115,75 +117,76 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'その他',
             items: [
               {
-                label: 'Blog',
+                label: 'ブログ',
                 to: '/blog',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Siro-Yamaneko/siro-yamaneko.github.io',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Docusaurus MUI. Templates by <a href="https://github.com/namnguyenthanhwork" style="font-weight: bold;" target="_blank">Thành Nam Nguyễn</a>`,
+        copyright: `Copyright © ${new Date().getFullYear()} Docusaurus MUI. 作成者: <a href="https://github.com/Siro-Yamaneko" style="font-weight: bold;" target="_blank">Siro Yamaneko</a>`,
       },
       prism: {
-        theme: prismThemes.oneDark,
-        darkTheme: prismThemes.oneDark,
+        theme: prismThemes.oneDark, // ダークテーマ用のPrismJSテーマ
+        darkTheme: prismThemes.oneDark, // ダークモード用テーマ
       },
     }),
+
   themes: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
-        indexPages: true,
-        docsRouteBasePath: '/docs',
-        hashed: true,
-        language: ['vi'],
-        highlightSearchTermsOnTargetPage: false,
-        searchResultContextMaxLength: 50,
-        searchResultLimits: 8,
-        searchBarShortcut: true,
-        searchBarShortcutHint: true,
+        indexPages: true, // ページをインデックスに含める
+        docsRouteBasePath: '/docs', // ドキュメントのルートパス
+        hashed: true, // ハッシュを使用したキャッシュ制御
+        language: ['ja'], // サポートする言語
+        highlightSearchTermsOnTargetPage: true, // ターゲットページで検索用語をハイライト
+        searchResultContextMaxLength: 50, // 検索結果のコンテキストの最大長
+        searchResultLimits: 8, // 最大表示件数
+        searchBarShortcut: true, // ショートカットキーを有効化
+        searchBarShortcutHint: true, // ショートカットヒントを表示
       },
     ],
   ],
+
   plugins: [
-    ['docusaurus-plugin-sass', {}],
+    ['docusaurus-plugin-sass', {}], // Sassプラグイン
     [
       'ideal-image',
       /** @type {import('@docusaurus/plugin-ideal-image').PluginOptions} */
       ({
-        quality: 70,
-        max: 1030,
-        min: 640,
-        steps: 2,
-        // Use false to debug, but it incurs huge perf costs
-        disableInDev: true,
+        quality: 70, // 画像の圧縮品質
+        max: 1030, // 最大画像幅
+        min: 640, // 最小画像幅
+        steps: 2, // 解像度のステップ数
+        disableInDev: true, // 開発環境では無効化
       }),
     ],
     [
       './src/plugins/blog-plugin',
       {
-        path: 'blog',
-        editLocalizedFiles: false,
-        blogTitle: 'Blog',
-        blogDescription: 'Blog description is here ...',
+        path: 'blog', // ブログのパス
+        editLocalizedFiles: false, // ローカライズされたファイルの編集を無効化
+        blogTitle: 'ぼっちエンジニアの備忘録',
+        blogDescription: '趣味や業務で使った技術の備忘録・雑記を投稿してます。',
         blogSidebarCount: 'ALL',
-        blogSidebarTitle: 'List blog',
-        routeBasePath: 'blog',
-        include: ['**/*.md', '**/*.mdx'],
+        blogSidebarTitle: 'ブログ一覧',
+        routeBasePath: 'blog', // ブログのルートパス
+        include: ['**/*.md', '**/*.mdx'], // 対象とするファイル
         exclude: ['**/_*.{js,jsx,ts,tsx,md,mdx}', '**/_*/**', '**/*.test.{js,jsx,ts,tsx}', '**/__tests__/**'],
-        postsPerPage: 6,
-        truncateMarker: /<!--\s*(truncate)\s*-->/,
-        showReadingTime: true,
-        onUntruncatedBlogPosts: 'ignore',
-        // Remove this to remove the "edit this page" links.
-        editUrl: 'https://github.com/namnguyenthanhwork/docusaurus-material-ui-template/tree/master/',
-        remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]],
+        postsPerPage: 6, // 1ページあたりの投稿数
+        truncateMarker: /<!--\s*(truncate)\s*-->/, // 記事を切り詰めるマーカー
+        showReadingTime: true, // 読了時間を表示
+        onUntruncatedBlogPosts: 'ignore', // 切り詰められていない投稿を無視
+        // 編集リンク
+        editUrl: 'https://github.com/Siro-Yamaneko/siro-yamaneko.github.io/tree/main',
+        remarkPlugins: [[require('@docusaurus/remark-plugin-npm2yarn'), { sync: true }]], // プラグイン
       },
     ],
   ],
