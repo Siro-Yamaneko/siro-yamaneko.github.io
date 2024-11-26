@@ -1,21 +1,24 @@
 en:
   languageName: English
   weight: 1
-
-zh-hans:
-  languageName: 简体中文
-  weight: 4
   params:
-    description: 一个快速、响应式和功能丰富的 Hugo 博客主题
-    keywords: 'Hugo, Bootstrap, 博客主题'
-    archive:
-      dateFormat: 01-02
+    description: Heloo under world.
+    keywords: 'hugo, tech, engineer, Python'
 
 ja:
   languageName: 日本語
   weight: 2
   params:
-    description: 高速で応答性の高い機能豊富なHugoブログテーマ
-    keywords: 'Hugo, Bootstrap, ブログテーマ'
+    description: Heloo under world.
+    keywords: 'hugo, tech, engineer, Python'
     archive:
       dateFormat: "01-02"
+
+zh-hans:
+  languageName: 简体中文
+  weight: 4
+  params:
+    description: Heloo under world.
+    keywords: 'hugo, tech, engineer, Python'
+    archive:
+      dateFormat: 01-02

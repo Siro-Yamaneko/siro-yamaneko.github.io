@@ -11,10 +11,10 @@ mainSections:
 # titleSeparator: '|'
 
 # サイトの説明
-description: "高速でレスポンシブ、機能豊富なHugoブログテーマ"
+description: "Heloo under world."
 
 # サイトのキーワード
-keywords: "Hugo, Bootstrap, ブログテーマ"
+keywords: "hugo, tech, engineer, Python"
 
 # images：
 # - site-feature-image.jpg
@@ -26,10 +26,10 @@ keywords: "Hugo, Bootstrap, ブログテーマ"
 # logo: false # ロゴを無効にする
 
 # サイトのブランド名
-brand: HBS
+brand: Boochi-Engineer
 
 # カラーパレット
-palette: purple # デフォルトのパレット。オプションのパレットへ変更後はブラウザのキャッシュをクリアする必要があります.
+palette: blue-gray # デフォルトのパレット。オプションのパレットへ変更後はブラウザのキャッシュをクリアする必要があります.
 # 利用可能なpalette. デフォルトはALL. 空の配列は無効を意味する.
 # palette：
 #  - blue
