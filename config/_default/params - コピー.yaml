@@ -1,0 +1,148 @@
+# Sass トランスパイラを Dart Sass に切り替える場合は以下をアンコメントしてください
+# sass_transpiler: 'dartsass'
+
+# メインセクションの定義
+mainSections:
+  - blog
+  - posts
+  - news
+
+# タイトルの区切り文字（デフォルトは '-'）
+# titleSeparator: '|'
+
+# サイトの説明
+description: "高速でレスポンシブ、機能豊富なHugoブログテーマ"
+
+# サイトのキーワード
+keywords: "Hugo, Bootstrap, ブログテーマ"
+
+# サイトのブランド名
+brand: "HBS"
+
+# カラーパレット
+palette: "purple"
+
+# 日付フォーマット
+dateFormat: ":date_long"
+
+# Google Adsense の設定（必要に応じて設定）
+googleAdsense: null
+
+# タクソノミーに表示する投稿数
+taxonomyPostCount: 20
+
+# タクソノミーの投稿数をカウントするか
+countTaxonomyPosts: true
+
+# ピン留めされる投稿数
+pinnedPostCount: 3
+
+# カスタムCSSとJSの設定
+customCSS: null
+customJS: null
+
+# 見出しの最小単語数（TOCを表示する条件）
+tocWordCount: 1
+
+# 見出しをタイトルケースにするか
+titleCase: true
+
+# 画像ビューアの有効化
+viewer: true
+
+# サイドバーの設定
+sidebar:
+  fixed: true
+
+# コードブロックの設定
+codeBlock:
+  lineNos: true # 行番号を表示
+
+# 投稿設定
+post:
+  featuredImage: true # 注目画像を表示
+  numberifyHeadings: true # 見出しに番号を付ける
+  numberifyHeadingsSeparator: "." # 見出し番号の区切り文字
+
+# アーカイブ設定
+archive:
+  paginate: 20 # ページネーションのサイズ
+
+# アナリティクス設定（Google/Baiduなどを指定可能）
+analytics:
+  google: null
+  baidu: null
+
+# サイト検証用の設定
+siteVerification:
+  google: null
+  bing: null
+  baidu: null
+
+# Creative Commons ライセンス設定
+creativeCommons: null
+
+# コメントシステム (Giscus) の設定
+giscus:
+  repo: "razonyang/hugo-theme-bootstrap-skeleton"
+  repoId: "R_kgDOHJi95g"
+  category: "General"
+  categoryId: "DIC_kwDOHJi95s4CTy6q"
+
+# サイト内検索の設定
+search:
+  paginate: 5
+  fuse:
+    threshold: 0.1
+
+# 報酬用のQRコード画像
+reward:
+  alipay: "images/reward/alipay.png"
+  wechat: "images/reward/wechat.png"
+
+# フォントサイズ設定
+fontSize: null
+
+# プログレッシブウェブアプリ（PWA）の設定
+pwa:
+  manifest:
+    short_name: "HBS"
+
+# お問い合わせフォームの設定
+contact:
+  endpoint: "https://getform.io/f/56041c81-9e03-4c24-b9c5-61238854d4cd"
+
+# GitHub リポジトリの設定
+repo:
+  url: "https://github.com/razonyang/hugo-theme-bootstrap-skeleton"
+  branch: "main"
+
+# トップアプリバーのソーシャルリンク
+topAppBar:
+  social:
+    github: "razonyang/hugo-theme-bootstrap"
+    patreon: "razonyang"
+    paypal: "razonyang"
+
+# ドキュメントナビゲーション設定
+docs:
+  nav:
+    expand: false
+    reduceFontSize: true
+
+# ソーシャルメディアリンク
+social:
+  email: "user@domain.tld"
+  github: "razonyang/hugo-theme-bootstrap"
+  twitter: "razonyang"
+
+# プロフィール情報
+author:
+  name: "Razon Yang"
+  bio: "Gopher, PHPer, Full Stack Engineer."
+  company: "Company"
+  location: "Earth"
+  social:
+    email: "razonyang@gmail.com"
+    github: "razonyang/hugo-theme-bootstrap"
+    twitter: "razonyang"

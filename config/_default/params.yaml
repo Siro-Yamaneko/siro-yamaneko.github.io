@@ -1,27 +1,37 @@
-# sass_transpiler: 'dartsass' # Uncomment to use Dart Sass, you need to install Dart Sass first.
+# Sass トランスパイラを Dart Sass に切り替える場合は以下をアンコメントしてください
+# sass_transpiler: 'dartsass'
 
+# メインセクションの定義
 mainSections:
   - blog
   - posts
   - news
 
-# titleSeparator: '|' # Title separator. Default to -.
+# タイトルの区切り文字（デフォルトは '-'）
+# titleSeparator: '|'
 
-description: An extreme fast, responsive and feature-rich blog theme for Hugo
-keywords: Hugo, Bootstrap, Blog Theme
-# images:
-#   - site-feature-image.jpg
+# サイトの説明
+description: "高速でレスポンシブ、機能豊富なHugoブログテーマ"
 
-# metaRobots: noindex, nofollow # Default value for Meta Tag robots
-# metaRobots:  # disable Meta Tag robots
+# サイトのキーワード
+keywords: "Hugo, Bootstrap, ブログテーマ"
 
-# logo: images/logo.png # Logo image. Default to images/logo.webp.
-# logo: false # Disable Logo
+# images：
+# - site-feature-image.jpg
+
+# metaRobots: noindex, nofollow # metaタグのRobotsのデフォルト値
+# metaRobots：  # metaタグのRobotsを無効にする
+
+# logo: images/logo.png # ロゴ画像。デフォルトはimages/logo.webp。
+# logo: false # ロゴを無効にする
+
+# サイトのブランド名
 brand: HBS
 
-palette: purple # Default palette. Optional. You'll need to clear the browser cache after modifying this.
-# Available palettes. Default to ALL. Empty array means disable.
-# palettes:
+# カラーパレット
+palette: purple # デフォルトのパレット。オプションのパレットへ変更後はブラウザのキャッシュをクリアする必要があります.
+# 利用可能なpalette. デフォルトはALL. 空の配列は無効を意味する.
+# palette：
 #  - blue
 #  - blue-gray
 #  - brown
@@ -35,99 +45,154 @@ palette: purple # Default palette. Optional. You'll need to clear the browser ca
 #  - teal
 #  - yellow
 
-# color: dark # light, dark or auto. Default to auto.
+# color: dark # light, dark or auto. デフォルトは auto。
 
-# fullWidth: true # Full width.
-# fixedHeader: false # Turn on/off fixed header.
+# fullWidth: true # 全幅.
+# fixedHeader: false # 固定ヘッダの表示/非表示を切り替える.
 
+# 日付フォーマット
 dateFormat: ":date_long"
 
-# Google Adsense
+# Google Adsense の設定
 googleAdsense: 
 
-# math: true # Enable math globally.
-# toc: false # Disable TOC globally.
+# math: true # 全世界で数学を有効にする.
+# toc: false # TOC をグローバルに無効にする.
 # tocPosition: content
-# breadcrumb: false # Disable breadcrumb
-# breadcrumbDivider: > # Breadcrumb divider
-# diagram: true
-# socialShare: false # disable social network sharing
-# searchBar: false # disable search-bar
+# breadcrumb: false # パンくずを無効にする
+# breadcrumbDivider： > パンくずを分割する
+# ダイアグラム: true
+# socialShare: false # SNS共有を無効にする
+# searchBar: false # 検索バーを無効にする
 
-# poweredBy: false # Whether to show powered by.
+# poweredBy: false # パワードバイを表示するかどうか。
 
-# readingTime: false # Whether to display the reading time.
-# postDate: false # Whether to display the post date in the post meta section.
+# readingTime: false # 読書時間を表示するかどうか。
+# postDate: false # 投稿メタセクションに投稿日時を表示するかどうか.
 
-# featuredPostCount: 10 # The number of featured posts shown in sidebar. Turn off by setting it to false.
-# recentPostCount: 10 # The number of recent posts shown in sidebar. Turn off by setting it to false.
-# relatedPostCount: 10 # The number of related posts. Turn off by setting it to false.
-# categoryCount: 10 # The number of categories shown in sidebar. Turn off by setting it to false.
-# tagCount: 10 # The number of tags shown in sidebar. Turn off by setting it to false.
-# seriesCount: 20 # The number of series shown in sidebar. Turn off by setting it to false.
-# taxonomyPaginate: 5 # Default to 10.
-taxonomyPostCount: 20 # The number of taxonomy's posts. Turn off by setting it to false.
-countTaxonomyPosts: true # Count posts of taxonomy.
+# featuredPostCount： 10 # サイドバーに表示される特集記事の数. falseに設定することでオフにできる.
+# recentPostCount： 10 # サイドバーに表示される最近の投稿の数. falseに設定することでオフにできる.
+# relatedPostCount： 10 # 関連する投稿の数. falseに設定してオフにする.
+# categoryCount： 10 # サイドバーに表示されるカテゴリの数. falseに設定することでオフにできる.
+# tagCount： 10 # サイドバーに表示されるタグの数. falseに設定することでオフにできる.
+# seriesCount： 20 # サイドバーに表示されるシリーズの数. falseに設定することでオフにできる.
+# taxonomyPaginate： 5 # デフォルトは10.
 
-# sidebarTaxonomies: [categories, tags, series] # The order of taxonomies on the sidebar.
+# taxonomyの投稿数。falseに設定することでオフにできる。
+taxonomyPostCount: 20
 
-# pinnedPost: false # Turn on/off pinned posts.
-pinnedPostCount: 3 # The number of pinned posts.
+# taxonomyの投稿数をカウントする。
+countTaxonomyPosts: true 
 
-# Custom CSS and JS
+# サイドバーのtaxonomyの並び順。
+# sidebarTaxonomies: [categories, tags, series]  
+
+# ピン留め投稿のオン/オフ。
+# pinnedPost: false 
+
+# ピン留めされた投稿の数。
+pinnedPostCount: 3 
+
+# Custom CSS と JS
 customCSS:
 customJS:
 
-tocWordCount: 1 # TOC is displayed only if the post's word count exceeds this value.
+# 投稿の単語数がこの値を超えた場合のみTOC（目次）が表示される。
+tocWordCount: 1 
 
-titleCase: true # Capitalized title.
+# 大文字のタイトル。
+titleCase: true 
 
-viewer: true # Image Viewer
+# 画像ビューア
+viewer: true 
 
 # backgroundImage: ['/images/bg-light.png', '/images/bg-dark.png']
-# rss: home # link the RSS button to homepage all the times.
 
+# RSSボタンをホームページに常時リンクする。
+# rss: home 
+
+# サイドバーの設定
 sidebar:
   fixed: true
-  # archives: true # Enable archives widget
-  # taxonomiesToggle: false # Disable taxonomy toggle
-  # categories: true # Enable categories widget
-  # tags: true # Enable tags widget
-  # series: true # Enable series widget
-  # authors: true # Enable authors widget
-  # postsToggle: false # Disable posts toggle
-  # featuredPosts: true # Enable featured posts widget
-  # recentPosts: true # Enable featured posts widget
-  # collapsed: true # Collapse sidebar widgets by default on small screens.
+  # アーカイブウィジェットを有効にする
+  # archives: true
 
+  # タクソノミートグルを無効にする
+  # taxonomiesToggle: false
+
+  # カテゴリウィジェットを有効にする
+  # categories: true
+
+  # タグウィジェットを有効にする
+  # tags: true
+
+  # シリーズウィジェットを有効にする
+  # series: true
+
+  # 著者ウィジェットを有効にする
+  # authors: true
+
+  # 投稿ウィジェットを無効にする
+  # postsToggle: false
+
+  # 特集記事ウィジェットを有効にする
+  # featuredPosts: true
+
+  # 特集記事ウィジェットを有効にする
+  # recentPosts: true
+
+  # 小さな画面ではデフォルトでサイドバーウィジェットを折りたたむ。
+  # collapsed: true
+
+# コードブロックの設定
 codeBlock:
-  # maxLines: 8
-  lineNos: true # true/false represents that show/hide the line numbers by default.
+  # 最大行数: 8
+  # 行番号の表示/非表示
+  lineNos: true
 
+# 投稿設定
 post:
-  # excerpt: description
+  # 抜粋：説明
   # excerptMaxLength: 120
-  # copyright: false # Whether to display copyright section on each post.
-  # plainifyExcerpt: false # Format excerpt in HTML if false.
-  featuredImage: true # Show the featured image above the content.
-  numberifyHeadings: true # Count headings automatically.
-  # numberifyHeadingsEndLevel: 4 # The depth of headings to count. Default to 6.
-  numberifyHeadingsSeparator: . # The separator between of number and headings.
-  # tocStyleType: decimal # The TOC's CSS list-style-type property.
+  # copyright: false # 各投稿にコピーライトセクションを表示するかどうか.
+  # plainifyExcerpt: false # falseの場合、抜粋をHTMLで整形する。
+
+  # 特集画像をコンテンツの上に表示する。
+  featuredImage: true
+
+  # 見出しに番号を付ける。
+  numberifyHeadings: true
+
+  # 数える見出しの深さ. デフォルトは6です。
+  # numberifyHeadingsEndLevel: 4
+
+  # 見出し番号の区切り文字
+  numberifyHeadingsSeparator: .
+  # TOCのCSS list-style-typeプロパティ。
+  # tocStyleType: decimal
+
   # imageTitleAsCaption: true
-  # panel: false # Disable the post panel.
-  # nav: false # Disable post navigations.
-  # The page position after clicking the read more button, read more from content if true. Default to the beginning of page.
-  # It supports only of the manual summaries spliting via <!--more-->.
+  
+  # 投稿パネルを無効にする
+  # panel: false
+
+  # ポストナビゲーションを無効にする。
+  # nav: false
+
+  # 続きを読むボタンをクリックした後のページ位置. デフォルトはページの先頭です.
+  # この機能は, <!-more-->で分割された手動要約のみをサポートします.
   # readMoreFromContent: true
 
+# アーカイブ設定
 archive:
-  paginate: 20 # Archive pagination. Default to 100.
-  # basePath = "/archiv" # The base path of archive pages.
-  # dateFormat: 01-02 # Archive date format. Default to Jan 2.
+  paginate: 20 
+  # アーカイブのページネーション。デフォルトは100。
+  # basePath = 「/archiv」. # アーカイブページのベースパス.
+  # dateFormat： 01-02 # アーカイブの日付フォーマット. デフォルトは1月2日.
 
 analytics:
-  # baidu:  # Baidu Analytics
+  google: null
+  baidu: null
 
 # Site verification
 siteVerification:
@@ -139,17 +204,19 @@ siteVerification:
   sogou: 
   shenma: 
 
-creativeCommons:
-  # by: true # Credit must be given to you, the creator.
-  # nc: true # Only noncommercial use of your work is permitted.
-  # nd: true # No derivatives or adaptations of your work are permitted.
-  # sa: true # Adaptations must be shared under the same terms.
+# Creative Commons ライセンス設定
+creativeCommons: null
+  # by: true # 創作者であるあなたへのクレジット表記が必要です。
+  # nc: true # あなたの作品の非商用利用のみが許可されます.
+  # nd: true # あなたの作品の派生物や翻案物の利用は許可されません.
+  # sa: true # 翻案も同じ条件で共有されなければならない.
 
 # utterances:
-  # repo: razonyang/hugo-theme-bootstrap-skeleton # Replace with your repository.
+  # あなたのリポジトリに置き換えてください。
+  # repo: Siro-Yamaneko/siro-yamaneko.github.io
   #issueTerm: pathname # pathname, url, title, og:title
   # label: comment
-  # By default, light and dark mode correspond to github-light and github-dark, respectively.
+  # デフォルトでは、ライトモードはgithub-light、ダークモードはgithub-darkに対応します。
   # Optional values: github-light, github-dark, preferred-color-scheme, github-dark-orange, icy-dark, dark-blue, photon-dark.
   #theme:  
 
@@ -170,6 +237,7 @@ creativeCommons:
   #paginate: 5 # Default to 10.
   #moderation: false # Same as Staticman's moderation.
 
+# コメントシステム (Giscus) の設定
 # See https://giscus.app
 giscus:
   repo: "razonyang/hugo-theme-bootstrap-skeleton" # required.
@@ -184,10 +252,15 @@ giscus:
   # lang: "en" # Specify language, default to site language.
   # lazyLoading: false # Default to true.
 
+
+# サイト内検索の設定
 search:
-  paginate: 5 # Pagination. Default to 10.
-  # resultContentWordCount: 240 # The maximum word count of result content for displaying.
-  # Fuse.js options. See https://fusejs.io/api/options.html.
+  # ページネーション。デフォルトは 10。
+  paginate: 5
+  # 結果を表示する際の最大ワード数
+  # resultContentWordCount: 240 
+  
+  #  Fuse.jsのオプション。 https://fusejs.io/api/options.html を参照してください.
   fuse:
     # ignoreLocation: true
     # location: 0
@@ -205,6 +278,7 @@ search:
   # indexName: ""
   # debug: true
 
+# 報酬用のQRコード画像
 reward:
   alipay: images/reward/alipay.png
   wechat: images/reward/wechat.png
@@ -215,16 +289,19 @@ reward:
 #share:
   #addThis:  # AddThis pubid.
 
+# 報酬用のQRコード画像
 #actionsPanel:
   # disabled: true
 
-# Comment or remove this settings to disable font size switcher.
+# フォントサイズ設定
+# フォントサイズスイッチャーを無効にするには, この設定をコメントまたは削除してください。
 fontSize:
   # extraSmall: .8rem
   # small: .9rem
   # large: 1.1rem
   # extraLarge: 1.2rem
 
+# プログレッシブウェブアプリ（PWA）の設定
 pwa:
   manifest:
     # name:  # Default to site title.
@@ -242,19 +319,23 @@ pwa:
     #   sizes: 144x144
     #   src: /images/icons/icon-144x144.png
 
+# お問い合わせフォームの設定
 contact:
-  endpoint: https://getform.io/f/56041c81-9e03-4c24-b9c5-61238854d4cd # Backend endpoint, remove this line if you're using Netlify.
+  # Netlify を使っている場合は、この行を削除してください。
+  endpoint: https://getform.io/f/56041c81-9e03-4c24-b9c5-61238854d4cd
   # file: true # Enable file upload
   # fileField: image # The name of file field.
   # reCaptcha:
     # siteKey: ""
 
+# GitHub リポジトリの設定
 repo:
   url: https://github.com/razonyang/hugo-theme-bootstrap-skeleton
   branch: main
   # subPath: exampleSite
   # dateFormat: 02/01/2006, 15:04:05 PM
 
+# トップアプリバーのソーシャルリンク
 topAppBar:
   # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
   social:
@@ -262,6 +343,7 @@ topAppBar:
     patreon: razonyang
     paypal: razonyang
 
+# ドキュメントナビゲーション設定
 docs:
   nav:
     expand: false # Expand docs navigation.
@@ -270,6 +352,7 @@ docs:
 #feeds:
   # content: true
 
+# ソーシャルメディアリンク
 social:
   # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
   email: user@domain.tld
@@ -306,21 +389,29 @@ social:
   patreon: razonyang
   tipeee: yourtipeeeaccount-fr
 
+
+# プロフィール情報
 author:
-  name: Razon Yang
+  name: '山猫シロ'
   # avatar: images/profile.png # Avatar image. Default to "images/profile.webp".
-  bio: 'Gopher, PHPer, Full Stack Engineer.'
-  company: Company # HTML markup are supported, such as: <a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a>.
-  location: Earth # HTML markup are supported, such as: <a href='https://www.openstreetmap.org/search?query=Earth'>Earth</a>.
+  bio: '元SIer。現在はフリーランスのエンジニア&イラストレーター。趣味や業務で使った技術の備忘録・雑記を投稿。'
+
+  # HTML markupがサポートされています。: <a href="https://example.com" target="_blank" rel="noopener noreferrer">Company</a>.
+  company: freeLance
+
+  # HTML markupがサポートされています。: <a href='https://www.openstreetmap.org/search?query=Earth'>Earth</a>.
+  location: Japan 
+
   # about: https://razonyang.com # The external about page. The internal about page will be used if not set.
   params: {
     # layout: compact
   }
+
   # See https://hbs.razonyang.com/v1/en/docs/widgets/social-links/.
   social:
-    email: razonyang@gmail.com
-    github: razonyang/hugo-theme-bootstrap
-    twitter: razonyang
-    patreon: razonyang
-    paypal: razonyang
+    email: ""
+    github: Siro-Yamaneko/siro-yamaneko.github.io
+    twitter: Siro_artemis
+    patreon: ""
+    paypal: ""
     rss: "" # Remove RSS
