@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://siro-yamaneko.github.io/sitemap.xml
