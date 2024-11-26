@@ -10,3 +10,12 @@ zh-hans:
     keywords: 'Hugo, Bootstrap, 博客主题'
     archive:
       dateFormat: 01-02
+
+ja:
+  languageName: 日本語
+  weight: 2
+  params:
+    description: 高速で応答性の高い機能豊富なHugoブログテーマ
+    keywords: 'Hugo, Bootstrap, ブログテーマ'
+    archive:
+      dateFormat: "01-02"
