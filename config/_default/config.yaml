@@ -34,6 +34,12 @@ permalinks:
 module:
   imports:
     - path: github.com/razonyang/hugo-theme-bootstrap
+  mounts:
+    - source: assets/img
+      target: static/img
+    - source: assets/vendor
+      target: static/vendor
+
 #   proxy: https://goproxy.cn
 
 # services:
